@@ -535,7 +535,7 @@ defmodule Screens.V2.WidgetInstance.DeparturesTest do
         prediction: %Prediction{route: %Route{id: "CR-Providence", type: :rail}, track_number: 7}
       }
 
-      assert %{type: :text, text: "TR7", color: :purple, route_abbrev: "PVD"} ==
+      assert %{type: :text, text: "TK7", color: :purple, route_abbrev: "PVD"} ==
                Departures.serialize_route([departure], serializer)
     end
   end
