@@ -218,7 +218,7 @@ defmodule Screens.V2.WidgetInstance.Serializer.RoutePill do
     base = %{route_abbrev: abbreviation}
 
     if track_number = opts[:track_number],
-      do: Map.merge(base, %{type: :text, text: "TR#{track_number}"}),
+      do: Map.merge(base, %{type: :text, text: "TK#{track_number}"}),
       else: Map.merge(base, %{type: :icon, icon: :rail})
   end
 
